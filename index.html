@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IWT lab works</title>
+    <style>
+        #nextpage {
+            border: 2px solid black;
+            background-color: orange;
+            padding: 10px;
+            height: 20px;
+            width: 80px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body style="background-color:lightblue; padding: 30px">
+    <h1>Internet and Web Technologies</h1>
+    <h2 style="color:sandybrown">Here we will be discussing technologies used in webpages.</h2>
+    <!-- Below is a paragraph. This is a comment. -->
+    <p style="font-size: 19px; color:grey; font-family: cursive">We shall see different tags used in an HTML document.</p>
+    <div>
+        <em>
+            <b>This is block 1.</b>
+        </em>
+        <p>There are <span style="color:rgb(153, 66, 51)">6</span>
+            headings available in html, h1 through h6</p>
+    </div>
+    <div>
+        <b>
+            <em>This is block 2</em>
+        </b>
+        <p>I am writing a paragraph with p tag.</p>
+    </div>
+    <div>
+        <p> To add a clickable image, put that img tag nested under an anchor tag</p>
+        <p> But then the entire image will point to one link.</p>
+        <p>In order to make different areas of image point of different links, we use a <span style="color:crimson; font-size:2em">map</span>(image-map)</p>
+        <img src="7 wonders_a.jpg" alt="7 wonders image map" usemap="#myMap" />
+        <map name="myMap" id="Map">
+            <area alt="" title="" href="https://en.wikipedia.org/wiki/Christ_the_Redeemer_(statue)" shape="poly" coords="8,13,12,112,162,113,157,14" />
+            <area alt="" title="" href="https://en.wikipedia.org/wiki/Great_Wall_of_China" shape="poly" coords="203,12,205,114,437,106,433,14" />
+            <area alt="" title="" href="https://en.wikipedia.org/wiki/Machu_Picchu" shape="poly" coords="465,8,465,105,695,104,687,19" />
+            <area alt="" title="" href="https://en.wikipedia.org/wiki/Petra" shape="poly" coords="11,138,12,236,168,239,156,139" />
+            <area alt="" title="" href="https://en.wikipedia.org/wiki/The_Colosseum" shape="poly" coords="469,137,468,234,689,232,686,136" />
+            <area alt="" title="" href="https://en.wikipedia.org/wiki/Taj_Mahal" shape="poly" coords="15,256,20,372,332,385,315,272" />
+            <area alt="" title="" href="https://en.wikipedia.org/wiki/Chichen_Itza" shape="poly" coords="357,264,364,382,682,383,686,268" />
+            <area alt="" title="" href="https://en.wikipedia.org/wiki/New7Wonders_of_the_World" shape="poly" coords="191,129,182,229,436,237,447,130" />
+        </map>
+        <table style="border:5px solid black; padding: 10px; float: right;" border="1">
+            <tr>
+                <th>Name</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>Christ the Redeemer</td>
+                <td>Rio de Janeiro, Brazil</td>
+            </tr>
+            <tr>
+                <td>Great Wall of China</td>
+                <td>China</td>
+            </tr>
+            <tr>
+                <td>Machu Picchu</td>
+                <td>Cuzco Region, Peru</td>
+            </tr>
+            <tr>
+                <td>Petra</td>
+                <td>Jordan</td>
+            </tr>
+            <tr>
+                <td>The Colosseum</td>
+                <td>Rome, Italy</td>
+            </tr>
+            <tr>
+                <td>Taj Mahal</td>
+                <td>Agra, Uttar Pradesh, India</td>
+            </tr>
+
+            <tr>
+                <td>Chichen Itza</td>
+                <td>Rio de Janeiro, Brazil</td>
+            </tr>
+        </table>
+    </div>
+    <div style="float:right">
+        <a id="nextpage" href="index2.html">Next Page</a>
+    </div>
+</body>
+
+</html>

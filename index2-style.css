@@ -1,0 +1,142 @@
+body{
+    /* Responsive Background Image */
+    
+    background-image: url("back-image2.jpg");
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+  
+  /* Background image doesn't tile */
+    background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+    background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+    background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+    background-color: #464646;
+}
+h3{
+    color:white;
+    text-align: center;
+    font-size: 1.2em;
+}
+.cursor-block{
+    left:calc(50vmax - 25vmax);
+    width:50vmax;
+    position:relative;
+    background-color: cornflowerblue;
+}
+.cursors-list{
+    font-family: Georgia;
+    font-size: 1.4em;
+    text-align: justify;
+    color:darkmagenta; 
+}
+.cursors-list li span{
+    color:black;
+}
+.links-effect-block{
+    position: relative;
+    left: 25vmax;
+    width: 50vmax;
+    height: 500px;
+    background-image: url("link-back-image.jpg");
+    /* repeat in both x and y */
+    background-repeat: repeat;
+}
+.links-list{
+    font-size: 2em;
+    font-family: cursive;
+    text-align: left;
+}
+.links-list li{
+    display: inline-block;
+    /* padding values - top right bottom left */
+    /* padding values- (top,bottom) (right,left) if only two values given */
+    padding: 10px 20px;
+    border: 1px solid black;
+    background-color: aquamarine;
+}
+/* When setting the style for several link states, there are some order rules:
+
+    a:hover MUST come after a:link and a:visited
+    a:active MUST come after a:hover
+ */
+.links-list a:link{
+    color:grey;
+    text-decoration: none;
+}
+.links-list a:visited{
+    color: darkorchid;
+}
+.links-list a:hover{
+    text-decoration: underline;
+    color: black;
+    background-color: yellow;
+}
+.links-list a:active{
+    color:hotpink;
+    background-color: lightgrey;
+}
+div.img-stack {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+.img-stack img{
+    border: 3px solid white;
+    padding: 5px;
+}
+.img-stack img:hover{
+    /* animation-name: cometotop;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; */
+    /* the above is same as below (shorthand) */
+    animation: cometotop 5s infinite;
+}
+img#book1{
+    position: absolute;
+    left: 500px;
+    top: 400px;
+    z-index: 5;
+}
+img#book2{
+    position: absolute;
+    left: 400px;
+    top: 300px;
+    z-index: 4;
+}
+img#book3{
+    position: absolute;
+    left: 300px;
+    top: 200px;
+    z-index: 3;
+}
+img#book4{
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    z-index: 2;
+    
+}
+img#book5{
+    position: relative;
+    left: 100px;
+    top: 0px;
+    z-index: 1;
+}
+
+@keyframes cometotop{
+    /* i don't know how to use default value for 0% */
+    /* But leaving it empty works, though not in a good way */
+0% {} 
+25% {z-index: 6;}
+100% {z-index: 6;}
+/* i think it divides the animation-duration in equal parts for each % so 
+i gave 25% also because i don't want 0% to continue for half of animation-duration that i specified. */
+}

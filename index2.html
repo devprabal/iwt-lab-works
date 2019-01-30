@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Experiment 2</title>
+    <link rel="stylesheet" href="index2-style.css" />
+</head>
+
+<body>
+    <h3>Hover upon different items to see the cursor change.</h3>
+    <!-- vmax is max width of browser window (aka viewport), other options are vh, vw, vmin -->
+    <!-- calc is to do simple math in CSS -->
+    <div class="cursor-block">
+        <ul class="cursors-list"><span style="color:aquamarine">some Cursors -</span>
+            <li style="cursor: auto;"> This is <span>auto</span>- set by browser</li>
+            <li style="cursor: crosshair"> This is <span>crosshair</span></li>
+            <li style="cursor: pointer;"> This is <span>pointer</span></li>
+            <li style="cursor: text"> This is <span>text</span></li>
+            <li style="cursor: wait"> This is <span>wait</span></li>
+            <li style="cursor: help"> This is <span>help</span></li>
+            <li style="cursor: move"> This is <span>move</span></li>
+            <li style="cursor: ne-resize"> This is (North East) <span>ne-resize</span></li>
+            <li style="cursor: default"> This is <span>default</span> cursor</li>
+            <li style="cursor: s-resize"> This is (South) <span>s-resize</span></li>
+        </ul>
+    </div>
+    <h3>See how the links change</h3>
+    <div class="links-effect-block">
+        <ul class="links-list">See what happens after you hover, visit, click the links below<br />
+            <li><a href="http://www.google.com">Google.com</a></li><br>
+            <li><a href="http://nitrr.ac.in">NITRR website</a></li><br>
+            <li><a href="http://www.amazon.in">Amazon buy</a></li><br>
+            <li><a href="http://libgen.io">eBooks website</a></li>
+        </ul>
+    </div>
+    <h3>Dan Brown's book featuring Langdon in a Layered CSS style (z-index)</h3>
+    <h3 style="font-size: 14px; color:silver">I have also added a come-to-top effect when mouse is hovered using <span style="color:red">@keyframes</span></h3>
+<div class="img-stack">
+    <img id="book1" src="/dan-books-images/1.png">
+    <img id="book2" src="/dan-books-images/2.png">
+    <img id="book3" src="/dan-books-images/3.png">
+    <img id="book4" src="/dan-books-images/4.png">
+    <img id="book5" src="/dan-books-images/5.png">
+</div>
+</body>
+
+</html>
