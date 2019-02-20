@@ -17,7 +17,21 @@
     </div>
     <p></p>
     <div style="text-align:center">
-        <div id="blink_box" style="height: 200px; width:200px; margin:0 auto; background-color: blue" >
+        <div id="blink_box" style="height: 200px; width:200px; margin:0 auto; background-color: black">
+            <script>
+                blink();
+            function blink() {
+                    setInterval(changecolor, 300);
+                }
+                function changecolor() {
+                    if (document.getElementById('blink_box').style.backgroundColor == 'black') {
+                        document.getElementById('blink_box').style.backgroundColor = "red";
+                    }
+                    else {
+                        document.getElementById('blink_box').style.backgroundColor = "black";
+                    }
+                }
+            </script>
         </div>
     </div>
 
@@ -34,21 +48,6 @@
             document.getElementById('color_box').style.backgroundColor = "black";
             document.getElementById('button_switch').innerHTML = "SWITCH LED ON";
             status = 'light';
-        }
-    }
-    var stat = 1;
-    function blink(){
-        stat = 1;
-        setInterval(changecolor,3000);
-    }
-    function changecolor(){
-        if (stat == 1) {
-            document.getElementById('blink_box').style.backgroundColor = "red";
-            stat = 0;
-        }
-        else {
-            document.getElementById('blink_box').style.backgroundColor = "black";
-            stat = 1;
         }
     }
 </script>
