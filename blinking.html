@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blinking LED effect</title>
+</head>
+
+<body>
+    <div style="text-align:center">
+        <div id ="color_box" style="height: 200px; width:200px; margin:0 auto; background-color: black">
+        </div>
+        <p></p>
+        <button id = "button_switch" type="button" onclick="light_dark()" style="width:180px; height:50px;">SWITCH LED ON</button>
+    </div>
+    <p></p>
+    <div style="text-align:center">
+        <div id="blink_box" style="height: 200px; width:200px; margin:0 auto; background-color: blue" >
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript">
+    var status = 'light';
+    function light_dark(){
+        if(status == 'light'){
+            document.getElementById('color_box').style.backgroundColor = "red";
+            document.getElementById('button_switch').innerHTML = "SWITCH LED OFF";
+            status = 'dark';
+        }
+        else{
+            document.getElementById('color_box').style.backgroundColor = "black";
+            document.getElementById('button_switch').innerHTML = "SWITCH LED ON";
+            status = 'light';
+        }
+    }
+    var stat = 1;
+    function blink(){
+        stat = 1;
+        setInterval(changecolor,3000);
+    }
+    function changecolor(){
+        if (stat == 1) {
+            document.getElementById('blink_box').style.backgroundColor = "red";
+            stat = 0;
+        }
+        else {
+            document.getElementById('blink_box').style.backgroundColor = "black";
+            stat = 1;
+        }
+    }
+</script>
+</html>
