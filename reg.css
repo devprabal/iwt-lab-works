@@ -1,0 +1,59 @@
+body{
+    /* background-color: #333140;     */
+    background-color: rgb(233, 233, 233);
+
+}
+
+#form_outer_div{
+    width: 500px;
+    height: 300px;
+    background-image: url('flower1.jpg');
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    background-color: rgb(159, 101, 161);
+    margin: 0 auto;
+    border: 5px solid #333140;
+    border-radius: 60px;
+    box-shadow: 25px 15px 7px 6px #888888;
+}
+
+#form_div{
+   background-color: rgba(62, 53, 63, 0.685);
+   border-radius: 52px;
+   width:500px;
+   height: 300px;
+   margin: 0 0 0 auto;
+   
+}
+form{
+    padding: 55px 10px;
+}
+#myform span{
+    color: white;
+    
+}
+.input_fields{
+    height: 35px;
+    border: 3px solid white;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.3em;
+    background-color: rgba(128, 128, 128, 0.605);
+    color: white;
+}
+.input_fields:hover{
+    background-color:  rgb(255, 255, 255);
+    color: black;
+}
+#submit_field{
+    height: 35px;
+    background-color: rgba(128, 0, 128, 0.605);
+    width: 150px;
+    color: white;
+}
+#submit_field:hover{
+    background-color: rgb(224, 2, 224);
+    cursor: pointer;
+    border: 3px solid rgb(224, 2, 224);
+}
+
